@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Watch</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto w-full max-w-[1320px] h-[720px] flex flex-col md:flex-row border">
+     <!-- Image Container -->
+      <div class="image-container flex-1 flex justify-center items-center p-4">
+        <img 
+          id="dynamic-image" 
+          src="./images/watch1.jpeg" 
+          alt="Descriptive Image" 
+          class="w-full lg:w-[630px] h-full lg:h-[720px]">
+      </div>
+      <!-- Text Container -->
+      <div class="text-container mt-[50px] flex-1 flex flex-col p-6">
+        <!-- Main Text -->
+        <p class="font-bold text-2xl text-[#364A63]">Classy Modern Smart Watch</p>
+        
+        <!-- Rating Section -->
+        <div class="flex mt-2">
+          <!-- Rating Icons (Stars) -->
+          <span class="text-yellow-400">
+            <i class="material-icons">star</i>
+          </span>
+          <span class="text-yellow-400">
+            <i class="material-icons">star</i>
+          </span>
+          <span class="text-yellow-400">
+            <i class="material-icons">star</i>
+          </span>
+          <span class="text-yellow-400">
+            <i class="material-icons">star_half</i>
+          </span>
+          <span class="text-yellow-400">
+            <i class="material-icons">star_outline</i>
+          </span>
+          <!-- Rating Number -->
+          <span class="ml-2 text-sm text-[#8091A7]">(2 Reviews)</span>
+        </div>
+        <div class="flex items-center text-center space-x-2">
+          <!-- Original Price (Struck-through) -->
+          <span class="line-through text-[#8091A7] text-[20px]">$99.00</span>
+          <!-- Current Price -->
+          <span class="text-[#6576FF] font-bold text-[24px]">$77.00</span>
+        </div>
+        <div class="my-[20px]">
+          <p class="text-[18px] text-[#8091A7]">I must explain to you how all this mistaken idea of denoun cing ple praising pain was born and I will give you a complete account of the system, and expound the actual teaching.</p>
+        </div>
+        <div class="flex justify-start gap-8">
+          <div>
+            <p class="text-[#8091A7] text-[14px]">Type</p>
+            <p class="text-[#364A63] text-[16px] font-bold">Watch</p>
+          </div>
+          <div>
+            <p class="text-[#8091A7] text-[14px]">Model Number</p>
+            <p class="text-[#364A63] text-[16px] font-bold">Forerunner 290XT</p>
+          </div>
+        </div>
+        <div class="my-[20px]">
+          <p class="text-[#364A63] text-[18px] font-bold">Band Color</p>
+        <div class="flex gap-5">
+          <!-- Color 1 -->
+          <div 
+            class="color-box w-[16px] h-[16px] rounded-full bg-[#816BFF] cursor-pointer border-2 border-white ring-2 ring-transparent transition-transform transform hover:scale-110"
+            data-color="#816BFF" 
+            data-image="./images/watch1.jpeg">
+          </div>
+          <!-- Color 2 -->
+          <div 
+            class="color-box w-[16px] h-[16px] rounded-full bg-[#1FCEC9] cursor-pointer border-2 border-white ring-2 ring-transparent transition-transform transform hover:scale-110"
+            data-color="#1FCEC9" 
+            data-image="./images/watch2.jpeg">
+          </div>
+          <!-- Color 3 -->
+          <div 
+            class="color-box w-[16px] h-[16px] rounded-full bg-[#4B97D3] cursor-pointer border-2 border-white ring-2 ring-transparent transition-transform transform hover:scale-110"
+            data-color="#4B97D3" 
+            data-image="./images/watch3.jpeg">
+          </div>
+          <!-- Color 4 -->
+          <div 
+            class="color-box w-[16px] h-[16px] rounded-full bg-[#3B4747] cursor-pointer border-2 border-white ring-2 ring-transparent transition-transform transform hover:scale-110"
+            data-color="#3B4747" 
+            data-image="./images/watch4.jpeg">
+          </div>
+        </div>
+        </div>
+
+        <!-- Wrist Size Selector -->
+        <div class="wrist-size flex flex-col gap-4">
+          <h2 class="text-[18px] text-[#364A63] font-bold">Wrist Size</h2>
+          <div class="flex gap-4">
+            <!-- Size S -->
+            <div 
+              class="size-box w-[73px] h-[36px] flex justify-center items-center gap-1 rounded-md border-2 border-[#DBDFEA] cursor-pointer hover:border-[#816BFF]"
+              data-size="S" 
+              data-price="69">
+              <p class="font-bold text-[#364A63] hover:text-[#816BFF]">S</p>
+              <p class="text-[13px] text-[#8091A7]">$69</p>
+            </div>
+            <!-- Size M -->
+            <div 
+              class="size-box w-[73px] h-[36px] flex justify-center items-center gap-1 rounded-md border-2 border-[#DBDFEA] cursor-pointer hover:border-[#1FCEC9]"
+              data-size="M" 
+              data-price="79">
+              <p class="font-bold text-[#364A63] hover:text-[#1FCEC9]">M</p>
+              <p class="text-[13px] text-[#8091A7]">$79</p>
+            </div>
+            <!-- Size L -->
+            <div 
+              class="size-box w-[73px] h-[36px] flex justify-center items-center gap-1 rounded-md border-2 border-[#DBDFEA] cursor-pointer hover:border-[#4B97D3]"
+              data-size="L" 
+              data-price="89">
+              <p class="font-bold text-[#364A63] hover:text-[#4B97D3]">L</p>
+              <p class="text-[13px] text-[#8091A7]">$89</p>
+            </div>
+            <!-- Size XL -->
+            <div 
+              class="size-box w-[73px] h-[36px] flex justify-center items-center gap-1 rounded-md border-2 border-[#DBDFEA] cursor-pointer hover:border-[#3B4747]"
+              data-size="XL" 
+              data-price="99">
+              <p class="font-bold text-[#364A63] hover:text-[#3B4747]">XL</p>
+              <p class="text-[13px] text-[#8091A7]">$99</p>
+            </div>
+          </div>
+          <!-- Selected Size and Quantity -->
+        <div class="flex">
+          <div id="cart-section" class=" mt-4 flex gap-4">
+            <div class="flex items-center">
+          <button 
+            id="decrease-btn" 
+            class="px-2 w-[35px] h-[36px] border "
+          >
+            -
+          </button>
+          <input 
+            type="number" 
+            id="quantity" 
+            min="1" 
+            value="1" 
+            class="border px-2 py-1 w-[60px] h-[36px] text-center" 
+            readonly>
+          <button 
+            id="increase-btn" 
+            class="px-2 w-[35px] h-[36px] border "
+          >
+            +
+          </button>
+        </div>
+          <div>
+            <button
+              id="add-to-cart-btn"
+              class="add-to-cart w-[105px] h-[36px] bg-[#6576FF] text-[13px] text-white px-4 rounded">
+              Add to Cart
+            </button>
+            <!-- Item count next to Add to Cart button -->
+            <span id="cart-item-count" class="text-white ml-2">0</span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="checkout-section" class="my-4 mx-auto w-[150px]">
+    <button
+    id="checkout-btn"
+    class="w-[139px] h-[42px] bg-[#FFBB5A] text-[14px] text-[#364A63] px-4 rounded-full"
+    onclick="openCheckoutModal()"
+  >
+    Checkout <span id="cart-item-count" class="ml-2 bg-white p-1 text-[#6576FF]">0</span>
+  </button>
+</div>
+
+
+<!-- Modal -->
+<div id="checkout-modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden">
+  <div class="bg-white w-[651px] h-[480px] md:w-1/2 mx-auto mt-20 p-4 rounded shadow-lg relative">
+    <h2 class="text-xl font-bold mx-[70px]">Your Cart</h2>
+    <div id="modal-items" class="max-h-64 overflow-y-auto"></div>
+    <div class="mt-4 mx-[70px]">
+      <p id="total-price" class="font-bold text-lg"></p>
+    </div>
+    <button
+      class="border-2 mx-[70px] px-4 py-2 rounded mt-4"
+      onclick="closeCheckoutModal()">
+      Continue</span>
+    </button>
+  </div>
+</div>
+
+
+</body>
+</html>
